@@ -56,7 +56,7 @@ def device(mock_connect, *args, **kwargs):
     """Juniper PyEZ Device Mock"""
 
     def get_facts():
-        dev._facts = device_facts
+        dev.facts = device_facts
 
     def mock_manager(*args, **kwargs):
         if 'device_params' in kwargs:
